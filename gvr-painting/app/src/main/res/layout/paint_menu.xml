@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alwaysDrawnWithCache="true"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="18dip"
+        android:text="Paint Menu"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/currentColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_color"
+        android:text="Current Color"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:typeface="monospace" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:layout_weight="0.11" />
+
+    <TextView
+        android:id="@+id/sizeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:text="Brush Size"
+        android:textSize="24sp" />
+
+    <SeekBar
+        android:id="@+id/sizeSeekBar"
+        style="@android:style/Widget.Material.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09"
+        android:max="50"
+        android:progress="18"
+        android:progressTint="@android:color/holo_purple"
+        android:thumbTint="@android:color/darker_gray"
+        android:tickMarkTint="@android:color/background_dark"
+        android:tickMarkTintMode="src_over" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:layout_weight="0.11" />
+
+    <TextView
+        android:id="@+id/textViewRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:text="Red"
+        android:textSize="24sp" />
+
+    <SeekBar
+        android:id="@+id/redSeekBar"
+        style="@android:style/Widget.Material.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09"
+        android:max="255"
+        android:progress="100"
+        android:progressTint="@android:color/holo_red_dark"
+        android:thumbTint="@android:color/darker_gray"
+        android:tickMarkTint="@android:color/background_dark"
+        android:tickMarkTintMode="src_over" />
+
+    <TextView
+        android:id="@+id/textViewGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:text="Green"
+        android:textSize="24sp" />
+
+    <SeekBar
+        android:id="@+id/greenSeekBar"
+        style="@android:style/Widget.Material.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09"
+        android:max="255"
+        android:progress="100"
+        android:progressTint="@android:color/holo_green_dark"
+        android:thumbTint="@android:color/darker_gray"
+        android:tickMarkTint="@android:color/background_dark"
+        android:tickMarkTintMode="src_over" />
+
+    <TextView
+        android:id="@+id/textViewBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:text="Blue"
+        android:textSize="24sp" />
+
+    <SeekBar
+        android:id="@+id/blueSeekBar"
+        style="@android:style/Widget.Material.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09"
+        android:max="255"
+        android:progress="100"
+        android:progressTint="@android:color/holo_blue_dark"
+        android:thumbTint="@android:color/darker_gray"
+        android:tickMarkTint="@android:color/background_dark"
+        android:tickMarkTintMode="src_over" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:layout_weight="0.11" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:text="Clear Canvas" />
+</LinearLayout>
